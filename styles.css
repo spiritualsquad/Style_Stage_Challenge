@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
+/* Global CSS Variables */
 :root {
     
     --main-color: #6ECBF5;
@@ -8,7 +8,7 @@
     --border: .1rem solid rgba(255, 255, 255, .3);
     line-height: 29px;
 }
-
+/* Resetting default styles */
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -20,7 +20,7 @@
     text-transform: capitalize;
     transition: .2s linear;
 }
-
+/* Base font size for responsive design */
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -35,6 +35,7 @@ body {
 section {
     padding: 2rem 7%;
 }
+/* Styling for skip link */
 .skip-link{
     z-index: 1000;
     font-size: 2rem;
@@ -143,7 +144,7 @@ header .container a svg {
         text-shadow: none;
     }
 }
-
+/* Navigation styles */
 nav {
     background-color: #000000;
     padding: 1rem;
@@ -179,7 +180,7 @@ nav li:hover {
     border: 1px solid var(--main-color);
     transition: all.3s ease;
 }
-
+/* Styling for about section */
 #about {
     display: grid;
     gap: 5px;
@@ -239,6 +240,7 @@ blockquote {
     font-size: 2.1rem;
 }
 
+/* Styling for guidelines section */
 #guidelines {
     font-size: 2rem;
     text-transform: uppercase;
@@ -267,14 +269,14 @@ blockquote {
 }
 
     
-
+/* Styling for contribute section */
 #contribute {
     font-size: 2rem;
     text-transform: uppercase;
     background-color: #0b175f;
     color: #fff;
 }
-
+/* Styling for profile section */
 aside#styles .container {
     font-size: 2rem;
     text-align: center;
@@ -332,7 +334,7 @@ aside#styles .container a:last-child{
     padding-top: 5px;
     color: #94a1b2;
 }
-
+/* Styling for profile card */
 .profile {
     width: 300px;
     max-width: 80%;
@@ -415,7 +417,7 @@ aside#styles .container a:last-child{
     box-sizing: content-box;
 }
 
-
+/* Styling for footer links */
 .page-footer {
   font-size: 1.7rem;
   color: white;
@@ -453,6 +455,7 @@ aside#styles .container a:last-child{
   margin-bottom: 1em;
   margin-right: 1em;
 }
+/* Styling for links */
 a:visited {
   color: var(--main-color);
   border-color: var(--main-color);
@@ -519,7 +522,7 @@ a.link-github svg {
       
 }
 @media(width<=1278px){
-
+/* Adjusting header and navigation styles for smaller screens */
     header .container,header .container h2,header .container p,header .container .link-github{
         position: static;
     }
